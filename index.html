@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LE PUNCH</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Angkor&family=Bebas+Neue&family=Caveat:wght@400..700&family=DM+Serif+Display:ital@0;1&family=Jersey+10+Charted&family=Madimi+One&family=Poppins:wght@700&family=Quicksand:wght@300..700&family=Sixtyfour&family=Space+Grotesk:wght@300..700&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+IS:wght@100..400&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css">
+    <script src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        html{
+            overflow: hidden;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }body{
+            background-color: #000000;
+        } a{
+            color: #F2B705;
+             text-decoration:underline; 
+             font-weight: 400;
+        }a:hover{
+            color:#F2B705; 
+             text-decoration:underline; 
+             font-weight: 400;
+            
+        }.containerr{
+            width: 112px;
+            height: 112px;
+            position: relative;
+           
+        }
+
+        .box1, .box2, .box3{
+            border : 16px solid #F24405;
+            box-sizing : border-box;
+            position : absolute;
+            display : block;
+        }
+        
+        .box1{
+            width: 112px;
+            height: 48px;
+            margin-top: 64px;
+            margin-left: 0px;
+            animation: anime1 4s 0s forwards ease-in-out infinite;
+        }
+        
+        .box2{
+            width: 48px;
+            height: 48px;
+            margin-top: 0px;
+            margin-left: 0px;
+            animation: anime2 4s 0s forwards ease-in-out infinite;
+        }
+        
+        .box3{
+            width: 48px;
+            height: 48px;
+            margin-top: 0px;
+            margin-left: 64px;
+            animation: anime3 4s 0s forwards ease-in-out infinite;
+        }
+        
+        
+        
+        @keyframes anime1 {
+            0%{
+                width: 112px;
+                height: 48px;
+                margin-top: 64px;
+                margin-left: 0px;
+            }12.5%{
+                width: 48px;
+                height: 48px;
+                margin-top: 64px;
+                margin-left: 0px;
+            }25%{
+                width: 48px;
+                height: 48px;
+                margin-top: 64px;
+                margin-left: 0px;
+            }37.5%{
+                width: 48px;
+                height: 48px;
+                margin-top: 64px;
+                margin-left: 0px;
+            }50%{
+                width: 48px;
+                height: 48px;
+                margin-top: 64px;
+                margin-left: 0px;
+            }62.5%{
+                width: 48px;
+                height: 48px;
+                margin-top: 64px;
+                margin-left: 0px;
+            }75%{
+                width: 48px;
+                height: 112px;
+                margin-top: 0px;
+                margin-left: 0px;
+            }87.5%{
+                width: 48px;
+                height: 48px;
+                margin-top: 0px;
+                margin-left: 0px;
+            }100%{
+                width: 48px;
+                height: 48px;
+                margin-top: 0px;
+                margin-left: 0px;
+            }
+        }
+
+        @keyframes anime2{
+            0%{
+                width: 48px;
+                height: 48px;
+                margin-top: 0px;
+                margin-left :0px;
+            }12.5%{
+                width: 48px;
+                height: 48px;
+                margin-top: 0px;
+                margin-left :0px;
+            }25%{
+                width: 48px;
+                height: 48px;
+                margin-top: 0px;
+                margin-left: 0px;
+            }37.5%{
+                width: 48px;
+                height: 48px;
+                margin-top: 0px;
+                margin-left: 0px;
+            }50%{
+                width: 112px;
+                height: 48px;
+                margin-top: 0px;
+                margin-left :0px;
+            }62.5%{
+                width :48px;
+                height :48px;
+                margin-top :0px;
+                margin-left: 64px;
+            }
+            75%{
+
+                width: 48px;
+                height: 48px;
+                margin-top: 0px;
+                margin-left: 64px;
+            }
+            87.5%{
+                width: 48px;
+                height: 48px;
+                margin-top: 0px;
+                margin-left: 64px;
+            }100%{
+
+                width: 48px;
+                height: 48px;
+                margin-top: 0px;
+                margin-left: 64px;
+            }
+        }
+
+        @keyframes anime3{
+            0%{
+                width: 48px;
+                height: 48px;
+                margin-top: 0px;
+                margin-left: 64px;
+            }12.5%{
+                width :48px;
+                height: 48px;
+                margin-top: 0px;
+                margin-left :64px;
+            }25%{
+                width: 48px;
+                height: 112px;
+                margin-top: 0px;
+                margin-left: 64px;
+            }37.5%{
+                width :48px;
+                height :48px;
+                margin-top :64px;
+                margin-left :64px;
+            }50%{
+                width :48px;
+                height: 48px;
+                margin-top: 64px;
+                margin-left: 64px;
+            }62.5%{
+
+                width :48px;
+                height: 48px;
+                margin-top :64px;
+                margin-left :64px;
+            }75%{
+                width: 48px;
+                height :48px;
+                margin-top :64px;
+                margin-left :64px;
+            }
+            87.5%{
+                width: 48px;
+                height: 48px;
+                margin-top: 64px;
+                margin-left: 64px;
+            }100%{
+                width: 112px;
+                height: 48px;
+                margin-top :64px;
+                margin-left :0px;
+            }
+        }
+        #nav_bar{
+            display: flex; justify-content: space-evenly; align-items: center; height: 80px; 
+            position: sticky;
+            top: 0;
+            backdrop-filter: blur(15px);
+            z-index: 3;
+            background-color: #00000085;
+        }.img_row{
+            display: flex;
+            justify-content: space-evenly; 
+            align-items: center;
+            & > div{
+                width: 30vw; 
+                height: 30vw; 
+                background-size:cover; 
+                background-position:center; 
+            }
+        }.cate{
+            margin: 0; 
+            background-color: transparent; 
+             color: white;   
+             padding: 10px 25px; 
+             border-bottom:#F2B705 2px dashed;  
+             border-radius: 25px; 
+             min-height: 50px; 
+             width: auto; 
+             text-align: center; 
+             font-size: 25px; 
+             font-family: 'Playwrite IS'; 
+             font-family: "Lilita One", sans-serif;
+             font-family: "Proza Libre", sans-serif;
+             font-weight: 800;
+             margin-bottom: 2rem;
+        }
+        .scale-up-center {
+	-webkit-animation: scale-up-center 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) infinite alternate forwards;
+	        animation: scale-up-center 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) infinite alternate forwards;
+}
+
+
+/**
+ * ----------------------------------------
+ * animation scale-up-center
+ * ----------------------------------------
+ */
+ @-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div style="position: absolute; top:0; width: 100vw; height: 100vh; backdrop-filter: blur(15px); display: flex; justify-content: center; align-items: center; background-color: rgba(0, 0, 0, 0.297); z-index: 6;" id="loader">
+        <div class="containerr">
+            <div class="box1"></div>
+            <div class="box2"></div>
+            <div class="box3"></div>
+        </div>
+    </div>
+    <div style="height: fit-content; width: 100vw; background-color: #000000; min-height: 2000px ; position: relative; font-family: 'ubuntu', Arial, Helvetica, sans-serif;">
+        <div style="position: relative; height: fit-content;">
+            <video src="vid.webm" muted autoplay style="width: 100vw; height: auto;"></video>
+            <div style="background: rgb(0,0,0); background: linear-gradient(0deg, rgba(0,0,0,0.99) 0%, rgba(0,0,0,0.938813025210084) 12%, rgba(0,0,0,0.8715861344537815) 24%, rgba(0,0,0,0.5886729691876751) 45%, rgba(0,0,0,0) 69%); width: 100vw; height: 100%; position: absolute; top: 0;">
+
+            </div>
+            <img src="logo/LE PUNCH.webp" alt="" srcset="" style="width: 70vw; position: absolute; top: 80%; z-index: 2; left: 50%; transform: translate(-50%, -50%);">
+        </div>
+        <!-- <div style="background-image: url('Barbecue-1.jpeg') ; width: 100%; height: 250px; background-size: cover; background-position: center;">
+            <div style="width: 100%; height: 100%; background: rgb(0,0,0); background: linear-gradient(0deg, rgba(0,0,0,0.99) 0%, rgba(0,0,0,0.938813025210084) 12%, rgba(0,0,0,0.8715861344537815) 24%, rgba(0,0,0,0.5886729691876751) 45%, rgba(0,0,0,0) 69%); display: flex; justify-content: center; align-items: end;">
+                <img src="logo/LE PUNCH.webp" alt="" srcset="" style="width: 70vw;">
+            </div>
+        </div> -->
+        <!-- <div style="display: flex; justify-content: space-around; align-items: center; height: 30vw;">
+            <img src="logo/logo.webp" alt="" srcset="" style="width: 20vw; ">
+            <img src="logo/halal.webp" alt="" srcset="" style="width: 20vw; "> 
+        </div> -->
+
+        <div id="nav_bar" >
+            <div>
+                <div style="width: 48vw; height: 36px; background-color: #0D0D0D; color: white; border: 1px solid #F2B705; box-shadow: 0 0 10px #F24405; border-radius: 5px; text-align: center; text-transform: uppercase; letter-spacing: 2px; display: flex; justify-content: space-evenly; align-items: center;">Contactez-nous </div>
+            </div>
+            <div>
+                <select name="" id="" style="width: 36vw; height: 36px; background-color: #0D0D0D; color: white; border: 1px solid #F2B705; box-shadow: 0 0 10px #F29F05; text-align: center;">
+                    <option selected hidden value="">Catégories</option>
+                    <option value="">Bowls</option>
+                    <option value="">Box</option>
+                    <option value="">Burgers</option>
+                </select>
+                
+            </div>
+        </div>
+        <div style="display: flex; justify-content: space-evenly; align-items: center; width: 100vw; height: 100px;">
+            <h1 class="cate">Les Nouveaux Bowls</h1>
+        </div>
+        <div style="display: flex; justify-content: space-evenly; align-items: center; height: fit-content; width: 100vw;" class="img_row"> 
+            <div style="background-image: url('bowls/bowls.webp'); " class="scale-up-center"></div>
+            <div style="background-image: url('bowls/bowls\ 2.webp'); animation-delay: .3s;" class="scale-up-center"></div>
+            <div style="background-image: url('bowls/bowls\ 3.webp'); animation-delay: .6s;" class="scale-up-center" ></div>
+        </div>
+        <div>
+            <h3 style="text-transform: uppercase; color: white; font-size: 16px; width: 100%; text-align: center;">STEAK - NUGGET - TENDERS - BACON - SAUCE FROMAGéRE - sauce cheddar</h3>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; align-items: center; padding:0 5vw; margin-top: 2rem;">
+            <div style="display: flex; flex-direction: column; width: 20vw; justify-content: center; align-items: center;">
+                <div style="background-image: url('box/cheddar\ frites.webp'); background-position: center; background-size: cover; width: 15vw; height: 15vw;"></div>
+                <p style="color: white; text-align: center;">Cheddar Frites</p>
+            </div>
+            <h1 class="cate">Box</h1>
+            <div style="display: flex; flex-direction: column; width: 20vw; justify-content: center; align-items: center;">
+                <div style="background-image: url('box/cheddar\ oignon.webp'); background-position: center; background-size: cover; width: 15vw; height: 15vw;"></div>
+                <p style="color: white; text-align: center;">Cheddar Oignon</p>
+            </div>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; align-items: start; padding: 0 5vw; margin-bottom: 2rem;">
+            <div style="display: flex; flex-direction: column; width: 15vw; justify-content: flex-start; align-items: center;">
+                <div style="background-image: url('box/cheddar\ bacon.webp'); background-position: center; background-size: cover; width: 15vw; height: 15vw;"></div>
+                <p style="color: white; text-align: center;">Cheddar Bacon</p>
+            </div>
+            <div style="display: flex; flex-direction: column; width: 15vw; justify-content: flex-start; align-items: center;">
+                <div style="background-image: url('box/nuggets\ frites.webp'); background-position: center; background-size: cover; width: 15vw; height: 15vw;"></div>
+                <p style="color: white; text-align: center;">Nuggets Frites</p>
+            </div>
+            <div style="display: flex; flex-direction: column; width: 15vw; justify-content: flex-start; align-items: center;">
+                <div style="background-image: url('box/6.00€.webp'); background-position: center; background-size: cover; width: 15vw; height: 15vw;"></div>
+                <p style="color: white; text-align: center;">Kebab Frites</p>
+            </div>
+            <div style="display: flex; flex-direction: column; width: 15vw; justify-content: flex-start; align-items: center;">
+                <div style="background-image: url('box/tenders\ frites.webp'); background-position: center; background-size: cover; width: 15vw; height: 15vw;"></div>
+                <p style="color: white; text-align: center;">Tenders Frites</p>
+            </div>
+            <div style="display: flex; flex-direction: column; width: 15vw; justify-content: flex-start; align-items: center;">
+                <div style="background-image: url('box/kebab\ \(1\).webp'); background-position: center; background-size: cover; width: 15vw; height: 15vw;"></div>
+                <p style="color: white; text-align: center;">Kebab</p>
+            </div>
+        </div>
+
+        <!-- burguers -->
+        <div style="display: flex; justify-content: center; align-items: center; padding:0 5vw; margin-top: 2rem;  margin-bottom: 2rem; width: 100vw;">
+            <h1 class="cate">Burgers</h1>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; align-items: start; padding: 0 5vw;">
+            <div style="display: flex; flex-direction: column; width: 15vw; justify-content: flex-start; align-items: center;">
+                <div style="background-image: url('burger/cheese-burger.webp'); background-position: center; background-size: cover; width: 15vw; height: 15vw;"></div>
+                <p style="color: white; text-align: center;">Cheese Burger</p>
+            </div>
+            <div style="display: flex; flex-direction: column; width: 15vw; justify-content: flex-start; align-items: center;">
+                <div style="background-image: url('burger/ROYAL\ BURGER.webp'); background-position: center; background-size: cover; width: 15vw; height: 15vw;"></div>
+                <p style="color: white; text-align: center;">Royal Burger<p>
+            </div>
+            <div style="display: flex; flex-direction: column; width: 15vw; justify-content: flex-start; align-items: center;">
+                <div style="background-image: url('burger/double-cheese.webp'); background-position: center; background-size: cover; width: 15vw; height: 15vw;"></div>
+                <p style="color: white; text-align: center;">Double Cheese</p>
+            </div>
+            <div style="display: flex; flex-direction: column; width: 15vw; justify-content: flex-start; align-items: center;">
+                <div style="background-image: url('burger/TRIPLE\ CHEESE.webp'); background-position: center; background-size: cover; width: 15vw; height: 15vw;"></div>
+                <p style="color: white; text-align: center;">Triple Cheese</p>
+            </div>
+        </div>
+        <div style="display: flex; justify-content: space-between; align-items: start; padding: 0 5vw; margin-bottom: 2rem;">
+            <div style="display: flex; flex-direction: column; width: 15vw; justify-content: flex-start; align-items: center;">
+                <div style="background-image: url('burger/CHICKEN-BURGER.webp'); background-position: center; background-size: cover; width: 15vw; height: 15vw;"></div>
+                <p style="color: white; text-align: center;">Chicken Burger</p>
+            </div>
+            <div style="display: flex; flex-direction: column; width: 15vw; justify-content: flex-start; align-items: center;">
+                <div style="background-image: url('burger/fish-burgeur.webp'); background-position: center; background-size: cover; width: 15vw; height: 15vw;"></div>
+                <p style="color: white; text-align: center;">Fish Burger</p>
+            </div>
+            <div style="display: flex; flex-direction: column; width: 15vw; justify-content: flex-start; align-items: center;">
+                <div style="background-image: url('burger/PUNCH\ BURGER.webp'); background-position: center; background-size: cover; width: 15vw; height: 15vw;"></div>
+                <p style="color: white; text-align: center;">Punch Burger<p>
+            </div>
+            <div style="display: flex; flex-direction: column; width: 15vw; justify-content: flex-start; align-items: center;">
+                <div style="background-image: url('burger/extra-cheese.webp'); background-position: center; background-size: cover; width: 15vw; height: 15vw;"></div>
+                <p style="color: white; text-align: center;">Extra Cheese</p>
+            </div>
+            <div style="display: flex; flex-direction: column; width: 15vw; justify-content: flex-start; align-items: center;">
+                <div style="background-image: url('burger/SUPER\ PUNCH.webp'); background-position: center; background-size: cover; width: 15vw; height: 15vw;"></div>
+                <p style="color: white; text-align: center;">Super Punch</p>
+            </div>
+        </div>
+
+        <!-- Tacos -->
+        <div style="width: 100vw; padding:0 5vw; display: flex; flex-direction: column; align-items: center; margin-bottom: 2rem;">
+            <h1 class="cate">Tacos</h1>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; width:100%;">
+                <div style="background-image: url('tacos/tacos.webp'); background-size: cover; background-position: center; width: 40%; height: 120px;">
+
+                </div>
+                <div style="width: 55%; border-top: 2px solid #F29F05; border-bottom: 2px solid #F29F05; border-radius: 15px; padding: 10px;">
+                    <div style="width: 100%; display: flex; justify-content: space-between; align-items: center; color:white;">
+                        <p><b>M</b> 1 Viande</p> 
+                        <p>8€</p>
+                    </div>
+                    <div style="width: 100%; display: flex; justify-content: space-between; align-items: center; color:white;">
+                        <p><b>L</b> 2 Viandes</p> 
+                        <p>9€</p>
+                    </div>
+                    <div style="width: 100%; display: flex; justify-content: space-between; align-items: center; color:white;">
+                        <p><b>XL</b> 3 Viandes</p> 
+                        <p>10€</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h3 style="text-transform: uppercase; color: white; font-size: 16px; width: 100%; text-align: center; margin-top: 1rem;">
+                    <span style="color: #f27d01;">Les Viandes:</span> Poulet, Kefta, STEAK, Kebab, Cordon Bleu, NUGGETs, TENDERS, SAUCE FROMAGéRE</h3>
+            </div>
+        </div>
+        
+
+         <!-- Tacos Gratiné Au Choix -->
+         <div style="width: 100vw; padding:0 5vw; display: flex; flex-direction: column; align-items: center; margin-bottom: 2rem;">
+            <h1 class="cate">Tacos Gratiné Au Choix</h1>
+
+            <div style="display: flex; justify-content: space-between; width:100%; align-items: center;">
+                <div style="width: 40%; height: 100%; display: flex; justify-content: space-between;">
+                    <div style="width: 45%; height: 100%;">
+                        <div>
+                            <div style="background-image: url('tacos/LARDONS.webp'); background-size: cover; background-position: center; width: 100%; height: 50px;"></div>
+                            <p style="color: white; text-align: center;">Lardons</p>
+                        </div>
+                        <div>
+                            <div style="background-image: url('tacos/CHEVRE\ MIEL.webp'); background-size: cover; background-position: center; width: 100%; height: 50px;"></div>
+                            <p style="color: white; text-align: center;">Chevre Miel</p>
+                        </div>
+                    </div>
+                    <div style="width: 45%; height: 100%;">
+                        <div>
+                            <div style="background-image: url('tacos/BOURSIN.webp'); background-size: cover; background-position: center; width: 100%; height: 50px;"></div>
+                            <p style="color: white; text-align: center;">Boursin</p>
+                        </div>
+                        <div>
+                            <div style="background-image: url('tacos/RACLETTE.webp'); background-size: cover; background-position: center; width: 100%; height: 50px;"></div>
+                            <p style="color: white; text-align: center;">Raclette</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div style="width: 55%; border-top: 2px solid #F29F05; border-bottom: 2px solid #F29F05; border-radius: 15px; height: fit-content; padding: 10px; ">
+                    <div style="width: 100%; display: flex; justify-content: space-between; align-items: center; color:white;">
+                        <p><b>M</b> 1 Viande</p> 
+                        <p>10€</p>
+                    </div>
+                    <div style="width: 100%; display: flex; justify-content: space-between; align-items: center; color:white;">
+                        <p><b>L</b> 2 Viandes</p> 
+                        <p>11€</p>
+                    </div>
+                    <div style="width: 100%; display: flex; justify-content: space-between; align-items: center; color:white;">
+                        <p><b>XL</b> 3 Viandes</p> 
+                        <p>12€</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+         <!-- Panini -->
+         <div style="width: 100vw; padding:0 5vw; display: flex; flex-direction: column; align-items: center; margin-bottom: 2rem;">
+            <h1 class="cate">Panini</h1>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; width:100%;">
+                <div style="background-image: url('images/panini.webp'); background-size: cover; background-position: center; width: 40%; height: 120px;">
+
+                </div>
+                <div style="width: 55%; border-top: 2px solid #F29F05; border-bottom: 2px solid #F29F05; border-radius: 15px; padding: 10px;">
+                    <div style="width: 100%; display: flex; justify-content: space-between; align-items: center; color:white;">
+                        <p>Au choix</p> 
+                        <p>5€</p>
+                    </div>
+                    <div style="width: 100%; display: flex; justify-content: space-between; align-items: center; color:white;">
+                        <p>Avec frites</p> 
+                        <p>6€</p>
+                    </div>
+                    <div style="width: 100%; display: flex; justify-content: space-between; align-items: center; color:white;">
+                        <p>En formule</p> 
+                        <p>7€</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <!-- kids -->
+         <div style="width: 100vw; padding:0 5vw; display: flex; flex-direction: column; align-items: center; margin-bottom: 2rem;">
+            <h1 class="cate">Menu Kids</h1>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; width:100%;">
+                <div style="width: 45%; height: 100%;">
+                    <div style="background-image: url('kids/nugget\ kids.webp'); background-size: cover; background-position: center; width: 50%; height: 60px;">
+                    </div>
+                    <div style="display: flex; justify-content: space-between;">
+                        <div style="width: 50%; color: white; display: flex; justify-content: center; align-items: center;"><h1>OU</h1></div>
+                        <div style="background-image: url('kids/burger\ kids.webp'); background-size: cover; background-position: center; width: 50%; height: 60px;">
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <div style="width: 55%; border-top: 2px solid #F29F05; border-bottom: 2px solid #F29F05; border-radius: 15px; padding: 10px;">
+                    <div style="width: 100%; display: flex; justify-content: space-between; align-items: center; color:white;">
+                        <p>4 Nugette et capri-sun</p> 
+                        <p>6€</p>
+                    </div>
+                    <div style="width: 100%; display: flex; justify-content: space-between; align-items: center; color:white;">
+                        <p>Cheese frites et capri-sun</p> 
+                        <p>6€</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sandwichs -->
+        <div style="width: 100vw; padding:0 5vw; display: flex; flex-direction: column; align-items: center; margin-bottom: 2rem;">
+            <h1 class="cate">Sandwichs</h1>
+
+            <div style="display: flex; justify-content: space-between; align-items: start; padding: 0 5vw; width: 100vw;">
+                <div style="display: flex; flex-direction: column; width: 20vw; justify-content: flex-start; align-items: center;">
+                    <div style="background-image: url('sandwich/kebab.webp'); background-position: center; background-size: cover; width: 20vw; height: 20vw;"></div>
+                    <p style="color: white; text-align: center;">Kebab</p>
+                </div>
+                <div style="display: flex; flex-direction: column; width: 20vw; justify-content: flex-start; align-items: center;">
+                    <div style="background-image: url('sandwich/kebab\ carnivore.webp'); background-position: center; background-size: cover; width: 20vw; height: 20vw;"></div>
+                    <p style="color: white; text-align: center;">Kebab Carnivore<p>
+                </div>
+                <div style="display: flex; flex-direction: column; width: 20vw; justify-content: flex-start; align-items: center;">
+                    <div style="background-image: url('sandwich/poulet\ mariné.webp'); background-position: center; background-size: cover; width: 20vw; height: 20vw;"></div>
+                    <p style="color: white; text-align: center;">Poulet Mariné</p>
+                </div>
+                <div style="display: flex; flex-direction: column; width: 20vw; justify-content: flex-start; align-items: center;">
+                    <div style="background-image: url('sandwich/poulet\ tondoori.webp'); background-position: center; background-size: cover; width: 20vw; height: 20vw;"></div>
+                    <p style="color: white; text-align: center;">Poulet Tondoori</p>
+                </div>
+            </div>
+
+
+            <div style="display: flex; justify-content: space-between; align-items: start; padding: 0 5vw; width: 100vw;">
+                <div style="display: flex; flex-direction: column; width: 20vw; justify-content: flex-start; align-items: center;">
+                    <div style="background-image: url('sandwich/MERGUEZ.webp'); background-position: center; background-size: cover; width: 20vw; height: 20vw;"></div>
+                    <p style="color: white; text-align: center;">Merguez</p>
+                </div>
+                <div style="display: flex; flex-direction: column; width: 20vw; justify-content: flex-start; align-items: center;">
+                    <div style="background-image: url('sandwich/TRIPLE\ x.webp'); background-position: center; background-size: cover; width: 20vw; height: 20vw;"></div>
+                    <p style="color: white; text-align: center;">Triple X<p>
+                </div>
+                <div style="display: flex; flex-direction: column; width: 20vw; justify-content: flex-start; align-items: center;">
+                    <div style="background-image: url('sandwich/AMERICAIN.webp'); background-position: center; background-size: cover; width: 20vw; height: 20vw;"></div>
+                    <p style="color: white; text-align: center;">American</p>
+                </div>
+                <div style="display: flex; flex-direction: column; width: 20vw; justify-content: flex-start; align-items: center;">
+                    <div style="background-image: url('sandwich/BROCHETTE.webp'); background-position: center; background-size: cover; width: 20vw; height: 20vw;"></div>
+                    <p style="color: white; text-align: center;">Brochette</p>
+                </div>
+            </div>
+
+            
+            <div style="display: flex; justify-content: space-between; align-items: start; padding: 0 5vw; width: 100vw;">
+                <div style="display: flex; flex-direction: column; width: 20vw; justify-content: flex-start; align-items: center;">
+                    <div style="background-image: url('sandwich/LE\ PUNCH\ STAR.webp'); background-position: center; background-size: cover; width: 20vw; height: 20vw;"></div>
+                    <p style="color: white; text-align: center;">LE PUNCH Star</p>
+                </div>
+                <div style="display: flex; flex-direction: column; width: 20vw; justify-content: flex-start; align-items: center;">
+                    <div style="background-image: url('sandwich/MISTER\ PUNCH.webp'); background-position: center; background-size: cover; width: 20vw; height: 20vw;"></div>
+                    <p style="color: white; text-align: center;">Mr PUNCH<p>
+                </div>
+                <div style="display: flex; flex-direction: column; width: 20vw; justify-content: flex-start; align-items: center;">
+                    <div style="background-image: url('sandwich/CAMPAGNARD.webp'); background-position: center; background-size: cover; width: 20vw; height: 20vw;"></div>
+                    <p style="color: white; text-align: center;">Campagnard</p>
+                </div>
+                <div style="display: flex; flex-direction: column; width: 20vw; justify-content: flex-start; align-items: center;">
+                    <div style="background-image: url('sandwich/kefta.webp'); background-position: center; background-size: cover; width: 20vw; height: 20vw;"></div>
+                    <p style="color: white; text-align: center;">Kefta</p>
+                </div>
+            </div>
+
+            <div style="display: flex; justify-content: space-between; align-items: start; padding: 0 5vw; width: 100vw;">
+                <div style="display: flex; flex-direction: column; width: 20vw; justify-content: flex-start; align-items: center;">
+                    <div style="background-image: url('sandwich/FALAFEL.webp'); background-position: center; background-size: cover; width: 20vw; height: 20vw;"></div>
+                    <p style="color: white; text-align: center;">Falafel</p>
+                </div>
+                <div style="display: flex; flex-direction: column; width: 20vw; justify-content: flex-start; align-items: center;">
+                    <div style="background-image: url('sandwich/VEGETARIEN.webp'); background-position: center; background-size: cover; width: 20vw; height: 20vw;"></div>
+                    <p style="color: white; text-align: center;">Vegetarien<p>
+                </div>
+                <div style="display: flex; flex-direction: column; width: 20vw; justify-content: flex-start; align-items: center;">
+                    <div style="background-image: url('sandwich/VRAP.webp'); background-position: center; background-size: cover; width: 20vw; height: 20vw;"></div>
+                    <p style="color: white; text-align: center;">Vrap</p>
+                </div>
+                <div style="display: flex; flex-direction: column; width: 20vw; justify-content: flex-start; align-items: center;">
+                    <div style="background-image: url('sandwich/L’ORIENTAL.webp'); background-position: center; background-size: cover; width: 20vw; height: 20vw;"></div>
+                    <p style="color: white; text-align: center;">l'Oriental</p>
+                </div>
+            </div>
+
+            <div style="display: flex; justify-content: space-between; align-items: start; padding: 0 5vw; width: 100vw;">
+                <div style="display: flex; flex-direction: column; width: 20vw; justify-content: flex-start; align-items: center;">
+                    <div style="background-image: url('sandwich/MARINADE.webp'); background-position: center; background-size: cover; width: 20vw; height: 20vw;"></div>
+                    <p style="color: white; text-align: center;">Marinade</p>
+                </div>
+                <div style="display: flex; flex-direction: column; width: 20vw; justify-content: flex-start; align-items: center;">
+                    <div style="background-image: url('sandwich/Poulet\ boursin.webp'); background-position: center; background-size: cover; width: 20vw; height: 20vw;"></div>
+                    <p style="color: white; text-align: center;">Poulet Boursin<p>
+                </div>
+                <div style="display: flex; flex-direction: column; width: 20vw; justify-content: flex-start; align-items: center;">
+                    <div style="background-image: url('sandwich/escalope.webp'); background-position: center; background-size: cover; width: 20vw; height: 20vw;"></div>
+                    <p style="color: white; text-align: center;">Escalope</p>
+                </div>
+                <div style="display: flex; flex-direction: column; width: 20vw; justify-content: flex-start; align-items: center;">
+                    <div style="background-image: url('sandwich/GOURMAND.webp'); background-position: center; background-size: cover; width: 20vw; height: 20vw;"></div>
+                    <p style="color: white; text-align: center;">Gourmand</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Plats -->
+        <div style="width: 100vw; padding:0 5vw; display: flex; flex-direction: column; align-items: center; margin-bottom: 2rem;">
+            <h1 class="cate">Assiette Grillade</h1>
+            <div style="width: 100%; display: flex; justify-content: center;">
+                <div style="width: 22%; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                    <div style="background-image: url('plat/plat-kefta.webp'); background-position: center; background-size: cover; width: 20vw; height: 20vw;"></div>
+                    <p style="padding:0; color: white;">Kefta</p>
+                    
+                </div>
+                <div style="width: 22%; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                    <div style="background-image: url('plat/plat-mixte.webp'); background-position: center; background-size: cover; width: 20vw; height: 20vw;"></div>
+                    <p style="padding:0; color: white;">Mixte</p>
+
+                    <div style="background-image: url('plat/plat-poulet.webp'); background-position: center; background-size: cover; width: 20vw; height: 20vw;"></div>
+                    <p style="padding:0; color: white;">Poulet</p>
+
+                </div>
+                <div style="width: 22%; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                    <div style="background-image: url('plat/plat-kebab.webp'); background-position: center; background-size: cover; width: 20vw; height: 20vw;"></div>
+                    <p style="padding:0; color: white;">Kebab</p>
+
+                    <div style="background-image: url('plat/plat-merguez.webp'); background-position: center; background-size: cover; width: 20vw; height: 20vw;"></div>
+                    <p style="padding:0; color: white;">Merguez</p>
+
+                </div>
+                <div style="width: 22%; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                    <div style="background-image: url('plat/plat-brochettes.webp'); background-position: center; background-size: cover; width: 20vw; height: 20vw;"></div>
+                    <p style="padding:0; color: white;">Brochette</p>
+
+                </div>
+               
+            </div>
+        </div>
+
+        <!-- Salades -->
+        <div style="width: 100vw; padding:0 5vw; display: flex; flex-direction: column; align-items: center; margin-bottom: 2rem;">
+            <h1 class="cate">Salades</h1>  
+
+            <div style="display: flex; justify-content: space-between; align-items: start; padding: 0 5vw; width: 100vw;">
+                <div style="display: flex; flex-direction: column; width: 20vw; justify-content: flex-start; align-items: center;">
+                    <div style="background-image: url('salade/cesar.webp'); background-position: center; background-size: cover; width: 20vw; height: 20vw;"></div>
+                    <p style="color: white; text-align: center;">La Cesar</p>
+                </div>
+                <div style="display: flex; flex-direction: column; width: 20vw; justify-content: flex-start; align-items: center;">
+                    <div style="background-image: url('salade/saumon.webp'); background-position: center; background-size: cover; width: 20vw; height: 20vw;"></div>
+                    <p style="color: white; text-align: center;">Saumon<p>
+                </div>
+                <div style="display: flex; flex-direction: column; width: 20vw; justify-content: flex-start; align-items: center;">
+                    <div style="background-image: url('salade/thon.webp'); background-position: center; background-size: cover; width: 20vw; height: 20vw;"></div>
+                    <p style="color: white; text-align: center;">Thon</p>
+                </div>
+                <div style="display: flex; flex-direction: column; width: 20vw; justify-content: flex-start; align-items: center;">
+                    <div style="background-image: url('salade/petite.webp'); background-position: center; background-size: cover; width: 20vw; height: 20vw;"></div>
+                    <p style="color: white; text-align: center;">La Petite</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Desserts -->
+        <div style="width: 100vw; padding:0 5vw; display: flex; flex-direction: column; align-items: center; margin-bottom: 2rem;">
+            <h1 class="cate">Desserts</h1>  
+
+            <div style="display: flex; justify-content: space-between; align-items: start; padding: 0 5vw; width: 100vw;">
+                <div style="display: flex; flex-direction: column; width: 30vw; justify-content: flex-start; align-items: center;">
+                    <div style="background-image: url('dessert/SMOOTHIE\ MILK\ SHAKE.webp'); background-position: 20% 15%; background-size: cover; width: 25vw; height: 25vw;"></div>
+                    <p style="color: white; text-align: center; text-transform: capitalize;">Smoothie Milk Shake</p>
+                </div>
+                <div style="display: flex; flex-direction: column; width: 30vw; justify-content: flex-start; align-items: center;">
+                    <div style="background-image: url('dessert/Panini\ nutella.webp'); background-position: 20% 15%; background-size: cover; width: 25vw; height: 25vw;"></div>
+                    <p style="color: white; text-align: center; text-transform: capitalize;">Panini Nutella<p>
+                </div>
+                <div style="display: flex; flex-direction: column; width: 30vw; justify-content: flex-start; align-items: center;">
+                    <div style="background-image: url('dessert/MUFFIN\ nutella.webp'); background-position: center; background-size: cover; width: 25vw; height: 25vw;"></div>
+                    <p style="color: white; text-align: center; text-transform: capitalize;">Muffin Nutella</p>
+                </div>
+            </div>
+            
+            <div style="display: flex; justify-content: space-between; align-items: start; padding: 0 5vw; width: 100vw;">
+                <div style="display: flex; flex-direction: column; width: 40vw; justify-content: flex-start; align-items: center;">
+                    <div style="background-image: url('dessert/tarte\ au\ daim.webp'); background-position: start; background-size: cover; width: 40vw; height: 40vw;"></div>
+                    <p style="color: white; text-align: center; text-transform: capitalize;">tarte au daim</p>
+                </div>
+                <div style="display: flex; flex-direction: column; width: 40vw; justify-content: flex-start; align-items: center;">
+                    <div style="background-image: url('dessert/GLACE\ MAGNUM.webp'); background-position: start; background-size: cover; width: 40vw; height: 40vw;"></div>
+                    <p style="color: white; text-align: center; text-transform: capitalize;">Glace Magnum</p>
+                </div>
+            </div>
+        </div>
+
+    <!-- Compléments -->
+    <div style="width: 100vw; padding:0 5vw; display: flex; flex-direction: column; align-items: center; margin-bottom: 2rem;">
+        <h1 class="cate">Wings</h1>  
+        <div style="display: flex; justify-content: space-between; align-items: center; width:100%;">
+            <div style="background-image: url('acc/wings.webp'); background-size: cover; background-position: center; width: 40%; height: 120px;">
+
+            </div>
+            <div style="width: 55%; border-top: 2px solid #F29F05; border-bottom: 2px solid #F29F05; border-radius: 15px; padding: 10px;">
+                <div style="width: 100%; display: flex; justify-content: space-between; align-items: center; color:white;">
+                    <p>x6</p> 
+                    <p>5€</p>
+                </div>
+                <div style="width: 100%; display: flex; justify-content: space-between; align-items: center; color:white;">
+                    <p>x9</p> 
+                    <p>7€</p>
+                </div>
+                <div style="width: 100%; display: flex; justify-content: space-between; align-items: center; color:white;">
+                    <p>x12</p> 
+                    <p>9€</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="width: 100vw; padding:0 5vw; display: flex; flex-direction: column; align-items: center; margin-bottom: 2rem;">
+        <h1 class="cate">Tenders</h1>  
+        <div style="display: flex; justify-content: space-between; align-items: center; width:100%;">
+            <div style="background-image: url('acc/tenders.webp'); background-size: cover; background-position: center; width: 40%; height: 120px;">
+
+            </div>
+            <div style="width: 55%; border-top: 2px solid #F29F05; border-bottom: 2px solid #F29F05; border-radius: 15px; padding: 10px;">
+                <div style="width: 100%; display: flex; justify-content: space-between; align-items: center; color:white;">
+                    <p>x6</p> 
+                    <p>5€</p>
+                </div>
+                <div style="width: 100%; display: flex; justify-content: space-between; align-items: center; color:white;">
+                    <p>x9</p> 
+                    <p>7€</p>
+                </div>
+                <div style="width: 100%; display: flex; justify-content: space-between; align-items: center; color:white;">
+                    <p>x12</p> 
+                    <p>10€</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="width: 100vw; padding:0 5vw; display: flex; flex-direction: column; align-items: center; margin-bottom: 2rem;">
+        <h1 class="cate">Nugettes</h1>  
+        <div style="display: flex; justify-content: space-between; align-items: center; width:100%;">
+            <div style="background-image: url('acc/Nuggets.webp'); background-size: cover; background-position: center; width: 40%; height: 120px;">
+
+            </div>
+            <div style="width: 55%; border-top: 2px solid #F29F05; border-bottom: 2px solid #F29F05; border-radius: 15px; padding: 10px;">
+                <div style="width: 100%; display: flex; justify-content: space-between; align-items: center; color:white;">
+                    <p>x6</p> 
+                    <p>4€</p>
+                </div>
+                <div style="width: 100%; display: flex; justify-content: space-between; align-items: center; color:white;">
+                    <p>x9</p> 
+                    <p>6€</p>
+                </div>
+                <div style="width: 100%; display: flex; justify-content: space-between; align-items: center; color:white;">
+                    <p>x12</p> 
+                    <p>8€</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div style="width: 100vw; padding:0 5vw; display: flex; flex-direction: column; align-items: center; margin-bottom: 2rem;">
+        <h1 class="cate">Oignon Rings</h1>  
+        <div style="display: flex; justify-content: space-between; align-items: center; width:100%;">
+            <div style="background-image: url('acc/Onions\ Rings.webp'); background-size: cover; background-position: center; width: 40%; height: 120px;">
+
+            </div>
+            <div style="width: 55%; border-top: 2px solid #F29F05; border-bottom: 2px solid #F29F05; border-radius: 15px; padding: 10px;">
+                <div style="width: 100%; display: flex; justify-content: space-between; align-items: center; color:white;">
+                    <p>x6</p> 
+                    <p>3€</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="width: 100vw; padding:0 5vw; display: flex; flex-direction: column; align-items: center; margin-bottom: 2rem;">
+        <h1 class="cate">Mozza</h1>  
+        <div style="display: flex; justify-content: space-between; align-items: center; width:100%;">
+            <div style="background-image: url('acc/mozza.webp'); background-size: cover; background-position: center; width: 40%; height: 120px;">
+
+            </div>
+            <div style="width: 55%; border-top: 2px solid #F29F05; border-bottom: 2px solid #F29F05; border-radius: 15px; padding: 10px;">
+                <div style="width: 100%; display: flex; justify-content: space-between; align-items: center; color:white;">
+                    <p>x6</p> 
+                    <p>5€</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div style="width: 100vw; padding:0 5vw; display: flex; flex-direction: column; align-items: center; margin-bottom: 2rem;">
+        <h1 class="cate">Bouchée Camembert</h1>  
+        <div style="display: flex; justify-content: space-between; align-items: center; width:100%;">
+            <div style="background-image: url('acc/bouchée\ camembert.webp'); background-size: cover; background-position: center; width: 40%; height: 120px;">
+
+            </div>
+            <div style="width: 55%; border-top: 2px solid #F29F05; border-bottom: 2px solid #F29F05; border-radius: 15px; padding: 10px;">
+                <div style="width: 100%; display: flex; justify-content: space-between; align-items: center; color:white;">
+                    <p>x6</p> 
+                    <p>5€</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    <div style="width: 100vw; padding:0 5vw; display: flex; flex-direction: column; align-items: center; margin-bottom: 2rem;">
+        <h1 class="cate">Jalapenos</h1>  
+        <div style="display: flex; justify-content: space-between; align-items: center; width:100%;">
+            <div style="background-image: url('acc/jalapenos.webp'); background-size: cover; background-position: center; width: 40%; height: 120px;">
+
+            </div>
+            <div style="width: 55%; border-top: 2px solid #F29F05; border-bottom: 2px solid #F29F05; border-radius: 15px; padding: 10px;">
+                <div style="width: 100%; display: flex; justify-content: space-between; align-items: center; color:white;">
+                    <p>x6</p> 
+                    <p>5€</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background-image: url('Barbecue-1.jpeg'); background-position: center; background-size: cover; position: relative;">
+        <div style="height: 100%; width: 100%; position: absolute; top: 0; left: 0; background-color: #00000069;">
+
+        </div>
+
+        <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100vw; padding-top: 2rem;">
+            <h3 style="color: white; width: 90vw; z-index: 4;     text-align: center;
+            font-size: 26px;
+            font-weight: 600;
+            font-family: 'Proza Libre', sans-serif;">Livraison offerte à partir de 20€</h3>
+            <h4 style="color: white; z-index: 4; 
+            width: 80vw;  
+            font-size: 20px;
+            font-weight: 400;
+            font-family: 'ubuntu', sans-serif;">Cholet, St legeres sous choler <br> La seguinière</h4>
+        </div>
+        <div style="display: flex; justify-content: center; align-items: center; width: 100vw;">
+            <a href="tel:0253691254" style="width: fit-content; color: white; font-size: 20px; font-weight: 600; text-decoration: none; text-align: center; padding: 10px 0;
+            border: 1px solid white; background: #f27d01; padding: 0 25px ; margin-top: 2rem;
+            border-radius: 25px;  z-index: 4;">02 53 69 12 54</a>
+        </div>
+        <div style="width: 100vw; display: flex; justify-content: center; background: transparent;">
+            <img src="images/del.png" alt="" style="width: 50vw; z-index: 4;">
+        </div>
+    </div>
+
+    <div id="map">
+
+    </div>
+    
+    <div style="background-color: #0D0D0D; height: 50px; width: 100vw; color: white; display: flex; justify-content: center; align-items: center; border-top: 1px solid white;">
+        <div>By <a href="https://joevev.github.io/mziouka-poly-service.github.io/" class="link_a" target="_blank">Joezv</a> at <a href="https://joevev.github.io/mziouka-poly-service.github.io/" class="link_a" target="_blank">MzPolyservices</a> | ©2024</div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+
+
+
+
+
+           
+            $( window ).on( "load", function() {
+                setTimeout(function() { 
+                    $('#loader').fadeOut();
+                    $('html').css('overflow','scroll');
+                }, 1000);
+            });
+            
+        })
+       
+    </script>
+</body>
+</html>
