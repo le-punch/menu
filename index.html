@@ -24,11 +24,11 @@
         }body{
             background-color: #000000;
         } a{
-            color: #F2B705;
+            color: #f27d01;
              text-decoration:underline; 
              font-weight: 400;
         }a:hover{
-            color:#F2B705; 
+            color:#f27d01; 
              text-decoration:underline; 
              font-weight: 400;
             
@@ -304,21 +304,13 @@
     </div>
     <div style="height: fit-content; width: 100vw; background-color: #000000; min-height: 2000px ; position: relative; font-family: 'ubuntu', Arial, Helvetica, sans-serif;">
         <div style="position: relative; height: fit-content;">
-            <video src="vid.webm" muted autoplay style="width: 100vw; height: auto;"></video>
+            <video src="vid.webm" muted autoplay loop style="width: 100vw; height: auto;"></video>
             <div style="background: rgb(0,0,0); background: linear-gradient(0deg, rgba(0,0,0,0.99) 0%, rgba(0,0,0,0.938813025210084) 12%, rgba(0,0,0,0.8715861344537815) 24%, rgba(0,0,0,0.5886729691876751) 45%, rgba(0,0,0,0) 69%); width: 100vw; height: 100%; position: absolute; top: 0;">
 
             </div>
             <img src="logo/LE PUNCH.webp" alt="" srcset="" style="width: 70vw; position: absolute; top: 80%; z-index: 2; left: 50%; transform: translate(-50%, -50%);">
         </div>
-        <!-- <div style="background-image: url('Barbecue-1.jpeg') ; width: 100%; height: 250px; background-size: cover; background-position: center;">
-            <div style="width: 100%; height: 100%; background: rgb(0,0,0); background: linear-gradient(0deg, rgba(0,0,0,0.99) 0%, rgba(0,0,0,0.938813025210084) 12%, rgba(0,0,0,0.8715861344537815) 24%, rgba(0,0,0,0.5886729691876751) 45%, rgba(0,0,0,0) 69%); display: flex; justify-content: center; align-items: end;">
-                <img src="logo/LE PUNCH.webp" alt="" srcset="" style="width: 70vw;">
-            </div>
-        </div> -->
-        <!-- <div style="display: flex; justify-content: space-around; align-items: center; height: 30vw;">
-            <img src="logo/logo.webp" alt="" srcset="" style="width: 20vw; ">
-            <img src="logo/halal.webp" alt="" srcset="" style="width: 20vw; "> 
-        </div> -->
+       
 
         <div id="nav_bar" >
             <div>
@@ -901,7 +893,7 @@
         <div style="display: flex; justify-content: center; align-items: center; width: 100vw;">
             <a href="tel:0253691254" style="width: fit-content; color: white; font-size: 20px; font-weight: 600; text-decoration: none; text-align: center; padding: 10px 0;
             border: 1px solid white; background: #f27d01; padding: 0 25px ; margin-top: 2rem;
-            border-radius: 25px;  z-index: 4;">02 53 69 12 54</a>
+            border-radius: 25px;  z-index: 4;" class="scale-up-center">02 53 69 12 54</a>
         </div>
         <div style="width: 100vw; display: flex; justify-content: center; background: transparent;">
             <img src="images/del.png" alt="" style="width: 50vw; z-index: 4;">
@@ -920,11 +912,6 @@
     <script>
         $(document).ready(function(){
 
-
-
-
-
-           
             $( window ).on( "load", function() {
                 setTimeout(function() { 
                     $('#loader').fadeOut();
