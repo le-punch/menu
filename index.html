@@ -314,19 +314,27 @@
 
         <div id="nav_bar" >
             <div>
-                <div style="width: 48vw; height: 36px; background-color: #0D0D0D; color: white; border: 1px solid #F2B705; box-shadow: 0 0 10px #F24405; border-radius: 5px; text-align: center; text-transform: uppercase; letter-spacing: 2px; display: flex; justify-content: space-evenly; align-items: center;">Contactez-nous </div>
+                <div id="contact_us" style="width: 48vw; height: 36px; background-color: #0D0D0D; color: white; border: 1px solid #F2B705; box-shadow: 0 0 10px #F24405; border-radius: 5px; text-align: center; text-transform: uppercase; letter-spacing: 2px; display: flex; justify-content: space-evenly; align-items: center;">Contactez-nous </div>
             </div>
             <div>
-                <select name="" id="" style="width: 36vw; height: 36px; background-color: #0D0D0D; color: white; border: 1px solid #F2B705; box-shadow: 0 0 10px #F29F05; text-align: center;">
+                <select name="" id="select_nav" style="width: 36vw; height: 36px; background-color: #0D0D0D; color: white; border: 1px solid #F2B705; box-shadow: 0 0 10px #F29F05; text-align: center;">
                     <option selected hidden value="">Catégories</option>
-                    <option value="">Bowls</option>
-                    <option value="">Box</option>
-                    <option value="">Burgers</option>
+                    <option value="browls">Bowls</option>
+                    <option value="box" id="box_btn">Box</option>
+                    <option value="burgers">Burgers</option>
+                    <option value="tacos">Tacos</option>
+                    <option value="panini">Panini</option>
+                    <option value="kids_menu">Kids Menu</option>
+                    <option value="sandwichs">Sandwichs</option>
+                    <option value="ass">Assiette Grillade</option>
+                    <option value="salades">Salades</option>
+                    <option value="desserts">Desserts</option>
+                    <option value="compléments">Compléments</option>
                 </select>
                 
             </div>
         </div>
-        <div style="display: flex; justify-content: space-evenly; align-items: center; width: 100vw; height: 100px;">
+        <div style="display: flex; justify-content: space-evenly; align-items: center; width: 100vw; height: 100px;" id="browls_container">
             <h1 class="cate">Les Nouveaux Bowls</h1>
         </div>
         <div style="display: flex; justify-content: space-evenly; align-items: center; height: fit-content; width: 100vw;" class="img_row"> 
@@ -338,7 +346,7 @@
             <h3 style="text-transform: uppercase; color: white; font-size: 16px; width: 100%; text-align: center;">STEAK - NUGGET - TENDERS - BACON - SAUCE FROMAGéRE - sauce cheddar</h3>
         </div>
 
-        <div style="display: flex; justify-content: space-between; align-items: center; padding:0 5vw; margin-top: 2rem;">
+        <div style="display: flex; justify-content: space-between; align-items: center; padding:0 5vw; margin-top: 2rem;" id="box_container">
             <div style="display: flex; flex-direction: column; width: 20vw; justify-content: center; align-items: center;">
                 <div style="background-image: url('box/cheddar\ frites.webp'); background-position: center; background-size: cover; width: 15vw; height: 15vw;"></div>
                 <p style="color: white; text-align: center;">Cheddar Frites</p>
@@ -374,7 +382,7 @@
         </div>
 
         <!-- burguers -->
-        <div style="display: flex; justify-content: center; align-items: center; padding:0 5vw; margin-top: 2rem;  margin-bottom: 2rem; width: 100vw;">
+        <div style="display: flex; justify-content: center; align-items: center; padding:0 5vw; margin-top: 2rem;  margin-bottom: 2rem; width: 100vw;" id="burgers_container">
             <h1 class="cate">Burgers</h1>
         </div>
 
@@ -420,7 +428,7 @@
         </div>
 
         <!-- Tacos -->
-        <div style="width: 100vw; padding:0 5vw; display: flex; flex-direction: column; align-items: center; margin-bottom: 2rem;">
+        <div style="width: 100vw; padding:0 5vw; display: flex; flex-direction: column; align-items: center; margin-bottom: 2rem;" id="tacos_container">
             <h1 class="cate">Tacos</h1>
 
             <div style="display: flex; justify-content: space-between; align-items: center; width:100%;">
@@ -450,7 +458,7 @@
         
 
          <!-- Tacos Gratiné Au Choix -->
-         <div style="width: 100vw; padding:0 5vw; display: flex; flex-direction: column; align-items: center; margin-bottom: 2rem;">
+         <div style="width: 100vw; padding:0 5vw; display: flex; flex-direction: column; align-items: center; margin-bottom: 2rem;" >
             <h1 class="cate">Tacos Gratiné Au Choix</h1>
 
             <div style="display: flex; justify-content: space-between; width:100%; align-items: center;">
@@ -496,7 +504,7 @@
         </div>
 
          <!-- Panini -->
-         <div style="width: 100vw; padding:0 5vw; display: flex; flex-direction: column; align-items: center; margin-bottom: 2rem;">
+         <div style="width: 100vw; padding:0 5vw; display: flex; flex-direction: column; align-items: center; margin-bottom: 2rem;" id="panini_container">
             <h1 class="cate">Panini</h1>
 
             <div style="display: flex; justify-content: space-between; align-items: center; width:100%;">
@@ -521,7 +529,7 @@
         </div>
 
          <!-- kids -->
-         <div style="width: 100vw; padding:0 5vw; display: flex; flex-direction: column; align-items: center; margin-bottom: 2rem;">
+         <div style="width: 100vw; padding:0 5vw; display: flex; flex-direction: column; align-items: center; margin-bottom: 2rem;" id="kids_menu_container">
             <h1 class="cate">Menu Kids</h1>
 
             <div style="display: flex; justify-content: space-between; align-items: center; width:100%;">
@@ -550,7 +558,7 @@
         </div>
 
         <!-- Sandwichs -->
-        <div style="width: 100vw; padding:0 5vw; display: flex; flex-direction: column; align-items: center; margin-bottom: 2rem;">
+        <div style="width: 100vw; padding:0 5vw; display: flex; flex-direction: column; align-items: center; margin-bottom: 2rem;" id="sandwichs_container">
             <h1 class="cate">Sandwichs</h1>
 
             <div style="display: flex; justify-content: space-between; align-items: start; padding: 0 5vw; width: 100vw;">
@@ -653,7 +661,7 @@
         </div>
 
         <!-- Plats -->
-        <div style="width: 100vw; padding:0 5vw; display: flex; flex-direction: column; align-items: center; margin-bottom: 2rem;">
+        <div style="width: 100vw; padding:0 5vw; display: flex; flex-direction: column; align-items: center; margin-bottom: 2rem;" id="ass_container">
             <h1 class="cate">Assiette Grillade</h1>
             <div style="width: 100%; display: flex; justify-content: center;">
                 <div style="width: 22%; display: flex; flex-direction: column; align-items: center; justify-content: center;">
@@ -687,7 +695,7 @@
         </div>
 
         <!-- Salades -->
-        <div style="width: 100vw; padding:0 5vw; display: flex; flex-direction: column; align-items: center; margin-bottom: 2rem;">
+        <div style="width: 100vw; padding:0 5vw; display: flex; flex-direction: column; align-items: center; margin-bottom: 2rem;" id="salades_container">
             <h1 class="cate">Salades</h1>  
 
             <div style="display: flex; justify-content: space-between; align-items: start; padding: 0 5vw; width: 100vw;">
@@ -711,7 +719,7 @@
         </div>
 
         <!-- Desserts -->
-        <div style="width: 100vw; padding:0 5vw; display: flex; flex-direction: column; align-items: center; margin-bottom: 2rem;">
+        <div style="width: 100vw; padding:0 5vw; display: flex; flex-direction: column; align-items: center; margin-bottom: 2rem;" id="desserts_container">
             <h1 class="cate">Desserts</h1>  
 
             <div style="display: flex; justify-content: space-between; align-items: start; padding: 0 5vw; width: 100vw;">
@@ -742,7 +750,7 @@
         </div>
 
     <!-- Compléments -->
-    <div style="width: 100vw; padding:0 5vw; display: flex; flex-direction: column; align-items: center; margin-bottom: 2rem;">
+    <div style="width: 100vw; padding:0 5vw; display: flex; flex-direction: column; align-items: center; margin-bottom: 2rem;" id="compléments">
         <h1 class="cate">Wings</h1>  
         <div style="display: flex; justify-content: space-between; align-items: center; width:100%;">
             <div style="background-image: url('acc/wings.webp'); background-size: cover; background-position: center; width: 40%; height: 120px;">
@@ -904,7 +912,7 @@
 
     </div>
     
-    <div style="background-color: #0D0D0D; height: 50px; width: 100vw; color: white; display: flex; justify-content: center; align-items: center; border-top: 1px solid white;">
+    <div id="foot" style="background-color: #0D0D0D; height: 50px; width: 100vw; color: white; display: flex; justify-content: center; align-items: center; border-top: 1px solid white;">
         <div>By <a href="https://joevev.github.io/mziouka-poly-service.github.io/" class="link_a" target="_blank">Joezv</a> at <a href="https://joevev.github.io/mziouka-poly-service.github.io/" class="link_a" target="_blank">MzPolyservices</a> | ©2024</div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
@@ -918,7 +926,61 @@
                     $('html').css('overflow','scroll');
                 }, 1000);
             });
+
+            $("#select_nav").on('change',function() {
+                if ($("#select_nav").val()=="box") {
+                    $('html, body').animate({
+                        'scrollTop' : $("#box_container").position().top - 100
+                    });
+                }else if ($("#select_nav").val()=="browls") {
+                    $('html, body').animate({
+                        'scrollTop' : $("#browls_container").position().top - 100
+                    });
+                }else if ($("#select_nav").val()=="burgers") {
+                    $('html, body').animate({
+                        'scrollTop' : $("#burgers_container").position().top - 100
+                    });
+                }else if ($("#select_nav").val()=="tacos") {
+                    $('html, body').animate({
+                        'scrollTop' : $("#tacos_container").position().top - 100
+                    });
+                }else if ($("#select_nav").val()=="panini") {
+                    $('html, body').animate({
+                        'scrollTop' : $("#panini_container").position().top - 100
+                    });
+                }else if ($("#select_nav").val()=="kids_menu") {
+                    $('html, body').animate({
+                        'scrollTop' : $("#kids_menu_container").position().top - 100
+                    });
+                }else if ($("#select_nav").val()=="sandwichs") {
+                    $('html, body').animate({
+                        'scrollTop' : $("#sandwichs_container").position().top - 100
+                    });
+                }else if ($("#select_nav").val()=="ass") {
+                    $('html, body').animate({
+                        'scrollTop' : $("#ass_container").position().top - 100
+                    });
+                }else if ($("#select_nav").val()=="salades") {
+                    $('html, body').animate({
+                        'scrollTop' : $("#salades_container").position().top - 100
+                    });
+                }else if ($("#select_nav").val()=="desserts") {
+                    $('html, body').animate({
+                        'scrollTop' : $("#desserts_container").position().top - 100
+                    });
+                }else if ($("#select_nav").val()=="compléments") {
+                    $('html, body').animate({
+                        'scrollTop' : $("#compléments").position().top - 100
+                    });
+                }
+                
+            });
             
+            $('#contact_us').on('click', function(){
+                $('html, body').animate({
+                        'scrollTop' : $("#foot").position().top + $("#foot").outerHeight(true)
+                    });
+            })
         })
        
     </script>
