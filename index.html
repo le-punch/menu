@@ -900,7 +900,7 @@
         </div>
     </div>
 
-    <div style="background-image: url('Barbecue-1.webp'); background-position: center; background-size: cover; position: relative;">
+    <div style="background-image: url('Barbecue-1.webp'); background-position: center; background-size: cover; position: relative;" id="contact_con">
         <div style="height: 100%; width: 100%; position: absolute; top: 0; left: 0; background-color: #00000069;">
 
         </div>
@@ -1037,7 +1037,7 @@
             
             $('#contact_us').on('click', function(){
                 $('html, body').animate({
-                        'scrollTop' : $("#foot").position().top + $("#foot").outerHeight(true)
+                        'scrollTop' : $("#contact_con").position().top - 100
                     });
             })
         })
