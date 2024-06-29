@@ -326,11 +326,11 @@
             
             <img src="logo/LE PUNCH.webp" alt="" srcset="" style="width: 70vw; position: absolute; top: 80%; z-index: 2; left: 50%; transform: translate(-50%, -50%);">
         </div>
-        <div style="display: flex; justify-content: center; align-items: center;">
-            <img src="24940959.webp" alt="" srcset=""  style="width: 50vw;">
-
+        <div style="display: flex; justify-content: center; align-items: center; position: relative;">
+            <img src="logo/logo.webp" alt="" srcset=""  style="width: 50vw;">
+            <img src="logo/halal.webp" alt="" srcset="" style="width: 20vw; top: 0; left: 50%; position: absolute; transform: translate(100%, -20%);">
         </div>
-        <div id="nav_bar" >
+        <div id="nav_bar">
             <div>
                 <div id="contact_us" style="width: 48vw; height: 36px; background-color: #0D0D0D; color: white; border: 1px solid #F2B705; box-shadow: 0 0 10px #F24405; border-radius: 5px; text-align: center; text-transform: uppercase; letter-spacing: 2px; display: flex; justify-content: space-evenly; align-items: center;">Contactez-nous </div>
             </div>
@@ -349,7 +349,6 @@
                     <option value="desserts">Desserts</option>
                     <option value="compléments">Compléments</option>
                 </select>
-                
             </div>
         </div>
         <div style="display: flex; justify-content: space-evenly; align-items: center; width: 100vw; height: 100px;" id="browls_container">
@@ -947,12 +946,7 @@
     <script>
         $(document).ready(function(){
 
-            $( window ).on( "load", function() {
-                setTimeout(function() { 
-                    $('#loader').fadeOut();
-                    $('html').css('overflow','scroll');
-                }, 1000);
-            });
+            
 
             $("#select_nav").on('change',function() {
                 if ($("#select_nav").val()=="box") {
@@ -1040,6 +1034,13 @@
                         'scrollTop' : $("#contact_con").position().top - 100
                     });
             })
+
+            $( window ).on( "load", function() {
+                setTimeout(function() { 
+                    $('#loader').fadeOut();
+                    $('html').css('overflow','scroll');
+                }, 1000);
+            });
         })
        
     </script>
